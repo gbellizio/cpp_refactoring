@@ -5,18 +5,17 @@ project(PolishCalculatorTests
 include(CTest)
 include(Catch)
 
-add_executable(tests
-               parser_test.cpp
-               solver_test.cpp
+add_executable(monopoly_tests
+               test.cpp
                )
 
-target_include_directories(tests
+target_include_directories(monopoly_tests
                            PRIVATE
                            ${CMAKE_CURRENT_SOURCE_DIR}/../)
 
-target_link_libraries(tests PRIVATE
+target_link_libraries(monopoly_tests PRIVATE
                       Catch2::Catch2WithMain
-                      polish_calculator_objs
+                      monopoly_objs
                       )
 
-catch_discover_tests(tests)
+#catch_discover_tests(monopoly_tests)
