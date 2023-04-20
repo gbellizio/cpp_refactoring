@@ -18,4 +18,4 @@ target_link_libraries(monopoly_tests PRIVATE
                       monopoly_objs
                       )
 
-#catch_discover_tests(monopoly_tests)
+catch_discover_tests(monopoly_tests)
